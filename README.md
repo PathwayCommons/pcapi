@@ -6,4 +6,4 @@ Live Demo: [http://sanderlab.org/pcapi](http://sanderlab.org/pcapi)
 
 # Screenshot
 
-![PC API Screenshot](pcapi_screenshot "PC API Screenshot")
+![PC API Screenshot](pcapi_screenshot.png "PC API Screenshot")
