@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  
+    // Define PC homepage URL; update a href links:
+    var pcHome = "http://beta.pathwaycommons.org/";
+    $(".pc-url").each(function(i, a) {
+      var e = $(a);
+      e.attr('href', pcHome + e.attr('href'));
+    });
+    
     // Setup clipboard
     var clip = new ZeroClipboard($("#clip"));
     var curlClip = new ZeroClipboard($("#curlClip"));
@@ -83,9 +91,8 @@ $(document).ready(function() {
             }
         });
 
-        var url = "http://www.pathwaycommons.org/pc2/search.json?q=Q06609";
-
-        var baseUrl = "http://www.pathwaycommons.org/pc2/";
+        var baseUrl = pcHome + "pc2/";
+        var url = baseUrl + "search.json?q=Q06609";
         var url2 = baseUrl + command + returnType + '?' + query.join('&');
         console.log("URL2: " + url2);
 
