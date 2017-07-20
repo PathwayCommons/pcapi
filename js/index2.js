@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
     // Define PC homepage URL; update a href links:
-    var pcHome = "http://beta.pathwaycommons.org/";
+    var pcHome = "http://www.pathwaycommons.org/";
     $(".pc-url").each(function(i, a) {
       var e = $(a);
       e.attr('href', pcHome + e.attr('href'));
