@@ -113,26 +113,32 @@
                         <div class="panel-heading">Overview</div>
                         <div class="panel-body">
                             <div class="subgroup">
-                                <h4>Overview</h4>
                                 <p>Pathway Commons (PC) integrates a number of
-                                    <a class="pc-url" href="pc2/datasources" target="_blank">pathway and molecular interaction databases</a>
-                                    supporting BioPAX and PSI-MI formats into one large BioPAX model, which can be
-                                    queried using our web API (documented below). This API can be used by computational
+                                    <a class="pc-url" href="pc2/datasources" target="_blank">pathway and molecular interaction data</a>
+                                    supporting BioPAX and PSI-MI formats (or converted to these formats by us) into one large BioPAX model, 
+                                    which can be queried using the web API. This API can be used by computational
                                     biologists to download custom subsets of Pathway Commons for analysis, or can be
                                     used to incorporate powerful biological pathway and network information retrieval
                                     and query functionality into websites, scripts and software.</p>
                             </div>
                             <div class="subgroup">
-                                <h4>Limitations</h4>
-                                <p>This is a hands-on teaching website to be used as part of a Pathway Commons tutorial. It has some limitations:</p>
+                                <p>This tutorial has limitations:</p>
                                 <ul>
-                                    <li>To remain "uncluttered", it provides limited documentation; full documentation
-                                        available on the main <a class="pc-url" href="pc2/" target="_blank">PC API website.</a></li>
-                                    <li>API calls timeout after 10 seconds; opening a request URL in a new tab overcomes this limitation.</li>
-                                    <li>This website does not cover all available API functions or parameters.</li>
-                                    <li>The <a href="http://bioconductor.org/packages/release/bioc/html/paxtoolsr.html" target="_blank">paxtoolsr</a>
-                                        R package provides added functionality for interacting with data retrieved from the PC API.</li>
-                                    <li>Only one parameter entry is supported for functions that support multiples of a given parameter.</li>
+                                    <li>It provides less information than can be found 
+                                        on the <a class="pc-url" href="pc2/" target="_blank">PC web service</a> home page.</li>
+                                    <li>Queries timeout after 10 seconds; opening a request URL in a new tab overcomes this limitation.</li>
+                                    <li>It does not cover all available API functions or parameters.</li>
+                                    <li>Only one parameter value is supported for functions that can accept an array for given parameter.</li>
+                                </ul>
+                            </div>
+                            <div class="subgroup">
+                                <p>Useful PC and BioPAX tools that we support:</p>
+                                <ul>
+                                    <li>The <a href="https://github.com/PathwayCommons/cpath2/wiki/PC2Client" target="_blank">Java client</a> library.</li>
+                                    <li>The <a href="http://biopax.github.io/Paxtools/" target="_blank">Paxtools</a> library (official BioPAX Java API and data model).</li>
+                                    <li>The <a href="https://github.com/PathwayCommons/cpath2-client" target="_blank">Javascript client</a> library.</li>
+                                    <li>The <a href="http://bioconductor.org/packages/release/bioc/html/paxtoolsr.html" target="_blank">Paxtoolsr</a>
+                                        R package provides added functionality for interacting with data retrieved via the PC web service.</li>
                                 </ul>
                             </div>
                         </div>
