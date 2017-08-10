@@ -1,4 +1,4 @@
-formatTypes = ["biopax", "binary_sif", "extended_binary_sif", "gsea", "sbgn"];
+formatTypes = ["biopax", "sif", "txt", "gsea", "sbgn"];
 
 api = [
     {
@@ -152,7 +152,7 @@ api = [
                         "value":"http://identifiers.org/reactome/REACT_12034.3"
                     },{
                         "param":"format",
-                        "value":"binary_sif"
+                        "value":"sif"
                     },
 
                 ]
@@ -236,7 +236,7 @@ api = [
                         "value":"neighborhood"
                     },{
                         "param":"format",
-                        "value":"EXTENDED_BINARY_SIF"
+                        "value":"TXT"
                     }
                 ]
             },{
