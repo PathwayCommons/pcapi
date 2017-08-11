@@ -100,7 +100,7 @@ $(document).ready(function() {
         $('#requestUrl').text(url2);
 
         //$("#requestUrl").html('<a class="codeLink" href="' + url2 + '" target="_blank">Open in New Tab</a><pre>' + url2 + '</pre>');
-        $("#curlCode").text('curl -X GET ' + url2);
+        $("#curlCode").text('curl -XGET "' + url2 + '"');
         $("#pythonCode").text("from urllib2 import Request, urlopen\n\nrequest = Request('" + url2 + "')\n\nresponse_body = urlopen(request).read()\nprint response_body");
         $("#rCode").text("library(httr)\n\nresult <- GET('" + url2 + "')\n\ncontent(result)");
         $("#groovyCode").text("content = '" + url2 + "'.toURL().text\n\nprintln content");
