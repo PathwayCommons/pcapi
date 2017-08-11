@@ -95,7 +95,7 @@ api = [
                     },
                     {
                         "param":"organism",
-                        "value":"homo sapiens"
+                        "value":"9606"
                     },
                     {
                         "param":"datasource",
@@ -168,10 +168,10 @@ api = [
                 "param":"kind",
                 "description":"Graph search kind",
                 "options":[
-                    "commonstream",
                     "neighborhood",
                     "pathsbetween",
-                    "pathsfromto"
+                    "pathsfromto",
+                    "commonstream"
                 ],
                 "required":true
             },
